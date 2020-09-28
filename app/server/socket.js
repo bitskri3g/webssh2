@@ -8,6 +8,7 @@ var debug = require('debug')
 var debugWebSSH2 = require('debug')('WebSSH2')
 var SSH = require('ssh2').Client
 var CIDRMatcher = require('cidr-matcher')
+var isIp = require('is-ip')
 // var fs = require('fs')
 // var hostkeys = JSON.parse(fs.readFileSync('./hostkeyhashes.json', 'utf8'))
 var termCols, termRows
